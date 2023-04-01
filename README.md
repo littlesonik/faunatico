@@ -23,3 +23,8 @@ Enciclopedia de fauna chilena, que indique informacion sobre su descripcion fisi
 | Verde Secundario | ![#425E0C](https://via.placeholder.com/10/425E0C?text=+) #425E0C |
 | Café Secundario | ![#5E1E11](https://via.placeholder.com/10/5E1E11?text=+) #5E1E11 |
 | Blanco | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
+
+---
+### Diseño Landing Page
+
+[Figma](https://www.figma.com/file/4FyAyMbfsfIgg9fSAV5Y8P/Faunatico?node-id=0-1&t=7EyZJsACcH9gYV03-0)
