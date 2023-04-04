@@ -2,8 +2,9 @@ body{
   margin: 0;
   padding: 0;
   display: grid;
+  height: 100vh;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6,10vh);
+  grid-template-rows: repeat(6,1fr);
   grid-template-areas: 
   "h h h h h h"
   "m m m m m m"
@@ -15,12 +16,15 @@ body{
 
 header{
   grid-area: h;
+  background-color: aqua;
 }
 
 main{
   grid-area: m;
+  background-color: blueviolet;
 }
 
 footer{
   grid-area: f;
+  background-color: coral;
 }
