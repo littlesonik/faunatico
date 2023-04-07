@@ -12,16 +12,44 @@ body{
   "m m m m m m"
   "m m m m m m"
   "f f f f f f";
+  text-align: center;
 }
 
 header{
+  padding: 1em 0;
   grid-area: h;
-  background-color: aqua;
+  background-color: #7DAB27;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #425E0C;
+}
+
+#logo{
+  width: 8em;
+}
+
+.nav-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation{
+  margin: 1em;
+  padding: 1vh 0;
+  text-decoration: none;
+}
+
+#register{
+  background-color: #425E0C;
+  color: white;
+  width: 15vh;
+  border-radius: 15px;
 }
 
 main{
   grid-area: m;
-  background-color: blueviolet;
+  background-color: white;
 }
 
 footer{
