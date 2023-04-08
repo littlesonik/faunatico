@@ -13,6 +13,7 @@ body{
   "m m m m m m"
   "f f f f f f";
   text-align: center;
+  font-family: 'DM Sans', sans-serif;
 }
 
 header{
@@ -38,6 +39,8 @@ header{
   margin: 1em;
   padding: 1vh 0;
   text-decoration: none;
+  font-weight: bold;
+  color: #385DAB;
 }
 
 #register{
@@ -54,5 +57,15 @@ main{
 
 footer{
   grid-area: f;
-  background-color: coral;
+  background-color: #7DAB27;
+  border-top: solid 1px #425E0C;
+  align-items: center;
+  padding: 1em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo-footer{
+  width: 3em;
+  height: 3em;
 }
