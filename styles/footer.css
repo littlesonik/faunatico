@@ -1,0 +1,28 @@
+/*FOOTER*/
+footer{
+  grid-area: f;
+  background-color: #385DAB;
+  border-top: solid 1px #425E0C;
+  align-items: center;
+  padding: 1em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#social-media{
+  display: flex;
+  justify-content: space-between;
+  width: 10em;
+}
+
+.icon{
+  text-decoration: none;
+  margin: 0.5vh;
+}
+
+.icon svg{
+  color: white;
+  fill: white;
+  height: 3vh;
+}
+/*CIERRE FOOTER*/
