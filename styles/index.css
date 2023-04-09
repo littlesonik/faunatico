@@ -1,3 +1,5 @@
+@import url(./header.css);
+@import url(./footer.css);
 body{
   margin: 0;
   padding: 0;
@@ -14,58 +16,4 @@ body{
   "f f f f f f";
   text-align: center;
   font-family: 'DM Sans', sans-serif;
-}
-
-header{
-  padding: 1em 0;
-  grid-area: h;
-  background-color: #7DAB27;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: solid 1px #425E0C;
-}
-
-#logo{
-  width: 8em;
-}
-
-.nav-header{
-  display: flex;
-  justify-content: space-between;
-}
-
-.navigation{
-  margin: 1em;
-  padding: 1vh 0;
-  text-decoration: none;
-  font-weight: bold;
-  color: #385DAB;
-}
-
-#register{
-  background-color: #425E0C;
-  color: white;
-  width: 15vh;
-  border-radius: 15px;
-}
-
-main{
-  grid-area: m;
-  background-color: white;
-}
-
-footer{
-  grid-area: f;
-  background-color: #7DAB27;
-  border-top: solid 1px #425E0C;
-  align-items: center;
-  padding: 1em 1em;
-  display: flex;
-  justify-content: space-between;
-}
-
-#logo-footer{
-  width: 3em;
-  height: 3em;
 }
