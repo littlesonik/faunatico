@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/registro.css">
   <script src="https://kit.fontawesome.com/82fab0caad.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>Registro Faunatico</title>
 </head>
 <body>
   <!-- SECCION HEADER-->
@@ -53,24 +53,28 @@
           <label class= formulario_label for="nombre">Nombre:</label>
           <input class="formulario_input" type="text" id="nombre" name="nombre" required />
           <i class="formulario_validacion-estado fas fa-times-circle"></i>
+          <p class="formulario_input-error">El nombre debe ser de 1 a 16 dígitos.</p>
         </div>
 
         <div class="formulario_grupo" id="grupo_apellido1">
           <label class= formulario_label for="apellido1">Apellido Paterno:</label>
           <input class="formulario_input" type="text" id="apellido1" name="apellido1" required />
           <i class="formulario_validacion-estado fas fa-times-circle"></i>
+          <p class="formulario_input-error">El apellido paterno debe ser de 1 a 16 dígitos.</p>
         </div>
 
         <div class="formulario_grupo" id="grupo_apellido2">
           <label class= formulario_label for="apellido2">Apellido Materno:</label>
           <input class="formulario_input" type="text" id="apellido2" name="apellido2" required />
           <i class="formulario_validacion-estado fas fa-times-circle"></i>
+          <p class="formulario_input-error">El apellido materno debe ser de 1 a 16 dígitos.</p>
         </div>
 
         <div class="formulario_grupo" id="grupo_rut">
           <label class= formulario_label for="rut">Rut:</label>
           <input class="formulario_input" type="text" id="rut" name="rut" required />
           <i class="formulario_validacion-estado fas fa-times-circle"></i>
+          <p class="formulario_input-error">Ingrese un rut valido.</p>
         </div>
       </fieldset>
 
@@ -80,6 +84,7 @@
         <label class= formulario_label for="email">Ingrese su Correo:</label>
         <input class="formulario_input" type="email" id="email" name="email" required />
         <i class="formulario_validacion-estado fas fa-times-circle"></i>
+        <p class="formulario_input-error">Ingrese un correo válido</p>
       </fieldset>
 
       <!-- SECCION CONTRASEÑAS -->
@@ -96,7 +101,7 @@
           required
         />
         <i class="formulario_validacion-estado fas fa-times-circle"></i>
-        <p class="formulario_input-error">La contraseña debe tener al menos 8 caracteres y contener al menos una letra mayúscula, una letra minúscula y un número</p>
+        <p class="formulario_input-error">La contraseña debe tener al menos 8 caracteres y contener al menos un número</p>
         </div>
 
         <div class="formulario_grupo" id="grupo_password2">
@@ -110,36 +115,9 @@
           required
         />
         <i class="formulario_validacion-estado fas fa-times-circle"></i>
-        <p class="formulario_input-error">La contraseña debe ser igual a la anterior</p>
+        <p class="formulario_input-error">La contraseña debe ser igual a la ingresada anteriormente</p>
         </div>
       </fieldset>
-
-      <!-- SECCION RESIDENCIA -->
-      <!-- 
-      <h4>Residencia</h4>
-      <fieldset class="formulario_grupo" id="grupo_residencia">
-        <label class= formulario_label for="region">Región de residencia:</label>
-        <select name="region" id="region" required>
-          <option value="">Región</option>
-          <option value="1">Región de Arica y Parinacota</option>
-          <option value="2">Región de Tarapacá</option>
-          <option value="3">Región de Antofagasta</option>
-          <option value="4">Región de Atacama</option>
-          <option value="5">Región de Coquimbo</option>
-          <option value="6">Región de Valparaíso</option>
-          <option value="7">Región Metropolitana</option>
-          <option value="8">Región de O'Higgins</option>
-          <option value="9">Región del Maule</option>
-          <option value="10">Región del Ñuble</option>
-          <option value="11">Región del Biobío</option>
-          <option value="12">Región de La Araucanía</option>
-          <option value="13">Región de Los Ríos</option>
-          <option value="14">Región de Los Lagos</option>
-          <option value="15">Región de Aysén</option>
-          <option value="16">Región de Magallanes</option>
-        </select>
-      </fieldset>
-      -->
 
       <!-- SECCION TERMINOS Y CONDICIONES -->
       <fieldset class="formulario_grupo" id="grupo_terminos">
