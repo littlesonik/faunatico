@@ -1,5 +1,47 @@
 /*FOOTER*/
-footer{
+
+footer {
+  grid-area: f;
+  padding: 0 5em;
+  background-color: #385DAB;
+  display: flex;
+  border-top: solid 1px #425E0C;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-footer {
+  /* width: 25vh; */
+  width: 9%;
+}
+
+#social-media{
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon{
+  text-decoration: none;
+  margin: 0 3vh;
+  display: flex;
+  align-items: center;
+}
+
+.icon svg{
+  fill: white;
+  height: 3vh;
+}
+
+/* CELULAR */
+
+@media screen and (max-width: 480px) {
+  footer {
+    padding: 0 2em;
+    justify-content: unset;
+  }
+}
+
+/* footer{
   grid-area: f;
   background-color: #385DAB;
   border-top: solid 1px #425E0C;
@@ -7,22 +49,22 @@ footer{
   padding: 1em 1em;
   display: flex;
   justify-content: space-between;
-}
+}*/
 
-#social-media{
+/* #social-media{
   display: flex;
   justify-content: space-between;
   width: 10em;
-}
-
-.icon{
+} */
+/* .icon{
   text-decoration: none;
   margin: 0.5vh;
-}
-
+} */
+/*
 .icon svg{
   color: white;
   fill: white;
   height: 3vh;
-}
+} 
+*/
 /*CIERRE FOOTER*/
