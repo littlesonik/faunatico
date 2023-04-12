@@ -68,7 +68,7 @@ div.catalogo {
 }
 
 figure.imagen {
-  width: 260px;
+  width: 21.875em;
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0;
@@ -76,9 +76,9 @@ figure.imagen {
 }
 
 figure.imagen > img {
-  width: 260px;
+  width: 21.875em;
   border-radius: 10px;
-  height: 300px;
+  height: 25em;
 }
 
 /* TABLET */
@@ -99,11 +99,11 @@ figure.imagen > img {
     margin-block-end: 0.4em;
   }
   figure.imagen {
-    width: 170px;
+    width: 11.875em;
   }
   figure.imagen > img {
-    width: 170px;
-    height: 240px;
+    width: 11.875em;
+    height: 15em;
   }
 }
 
@@ -130,6 +130,13 @@ figure.imagen > img {
   }
   section#menu-fauna {
     margin: 0 2em;
+  }
+  figure.imagen {
+    width: 18.75em;
+  }
+  figure.imagen > img {
+    width: 18.75em;
+    height: 21.875em;
   }
 }
 
