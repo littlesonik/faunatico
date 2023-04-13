@@ -1,5 +1,63 @@
 /*HEADER*/
-header{
+
+header {
+  grid-area: h;
+  padding: 0 5em;
+  background-color: #7DAB27;
+  border-bottom: solid 1px #425E0C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  /* width: 30vh; */
+  width: 10%;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  width: 25em;
+}
+
+.navigation {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+#register {
+  background-color: #425E0C;
+  border-radius: 15px;
+  padding: 0.4em;
+}
+
+main {
+  grid-area: m;
+}
+
+/* CELULAR */
+
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0 2em;
+    display: block;
+    height: 6em;
+  }
+  .nav-header {
+    width: 100%;
+    margin: 0 0 0.7em 0;
+  }
+  .navigation {
+    
+  }
+  figure.imagen {
+    width: unset !important;
+  }
+}
+
+/* header{
   padding: 1em 0;
   grid-area: h;
   background-color: #7DAB27;
@@ -32,5 +90,5 @@ header{
 main{
   grid-area: m;
   background-color: white;
-}
+} */
 /*CIERRE HEADER*/
