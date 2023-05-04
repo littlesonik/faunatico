@@ -2,13 +2,9 @@
 const fastify = require('fastify')({ logger: true });
 fastify.register(require('@fastify/cors'), {});
 
-// Declare a route
-fastify.get('/', async (request, reply) => {
-  return { hello: 'world' }
-})
-
 //RUTAS
 fastify.post('/registro', require('./src/registro'));
+fastify.post('/login', require('./src/login'));
 
 // Run the server!
 const start = async () => {
