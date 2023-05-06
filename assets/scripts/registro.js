@@ -6,8 +6,8 @@ const expresiones = { //objeto con las distintas propiedades con sus EXPRESIONES
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,16}$/, // Letras y espacios, pueden llevar acentos.
 	apellido1: /^[a-zA-ZÀ-ÿ\s]{1,16}$/,
   apellido2: /^[a-zA-ZÀ-ÿ\s]{1,16}$/,
-  password: /^.[a-zA-Z0-9].{8,16}$/, // 8 a 16 digitos.
-  password2: /^.[a-zA-Z0-9].{8,16}$/,
+  password: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/, // 8 a 16 digitos.
+  password2: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/,
 	email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
   rut: /^[0-9]{8,9}[-|‐]{1}[0-9kK]{1}$/ //formato rut
 }
@@ -63,15 +63,11 @@ const validarCampo = (expresion, input, campo) => {
   if (expresion.test(input.value)){/*con el .test estoy validando si la EXPRESION para cada propiedad es verdadera*/
     document.getElementById(`grupo_${campo}`).classList.add('formulario_grupo-correcto');//Busco por el ID dentro del form 'grupo_${campo}' y le añado la clase escrita, con esto puede ingresar a los estilos CSS que remarcan en verde la validacion
     document.getElementById(`grupo_${campo}`).classList.remove('formulario_grupo-incorrecto');  //en caso de no pasar la validación, se debe actualizar y remover la clase para eliminar el estilo CSS para la validación incorrecta
-    document.querySelector(`#grupo_${campo} i`).classList.add('fa-check-circle');
-    document.querySelector(`#grupo_${campo} i`).classList.remove('fa-times-circle'); 
     document.querySelector(`#grupo_${campo} .formulario_input-error`).classList.remove('formulario_input-error-activo');
     campos[campo] = true;
   } else{
     document.getElementById(`grupo_${campo}`).classList.add('formulario_grupo-incorrecto'); //si no pasa la validacion, se le añade la clase para el estilo CSS de incorrecto.
     document.getElementById(`grupo_${campo}`).classList.remove('formulario_grupo-correcto');
-    document.querySelector(`#grupo_${campo} i`).classList.add('fa-times-circle');
-    document.querySelector(`#grupo_${campo} i`).classList.remove('fa-check-circle'); 
     document.querySelector(`#grupo_${campo} .formulario_input-error`).classList.add('formulario_input-error-activo');
     campos[campo] = false;
   }
@@ -84,15 +80,11 @@ const validarContraseña2 = () => {
   if(inputContraseña1.value !== inputContraseña2.value){
     document.getElementById(`grupo_password2`).classList.add('formulario_grupo-incorrecto'); //si no pasa la validacion, se le añade la clase para el estilo CSS de incorrecto.
     document.getElementById(`grupo_password2`).classList.remove('formulario_grupo-correcto');
-    document.querySelector(`#grupo_password2 i`).classList.add('fa-times-circle');
-    document.querySelector(`#grupo_password2 i`).classList.remove('fa-check-circle'); 
     document.querySelector(`#grupo_password2 .formulario_input-error`).classList.add('formulario_input-error-activo');
     campos['password'] = false;
   } else {
     document.getElementById(`grupo_password2`).classList.remove('formulario_grupo-incorrecto'); //si no pasa la validacion, se le añade la clase para el estilo CSS de incorrecto.
-    document.getElementById(`grupo_password2`).classList.add('formulario_grupo-correcto');
-    document.querySelector(`#grupo_password2 i`).classList.remove('fa-times-circle');
-    document.querySelector(`#grupo_password2 i`).classList.add('fa-check-circle'); 
+    document.getElementById(`grupo_password2`).classList.add('formulario_grupo-correcto'); 
     document.querySelector(`#grupo_password2 .formulario_input-error`).classList.remove('formulario_input-error-activo');
     campos['password'] = true;
   }

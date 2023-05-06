@@ -37,24 +37,14 @@ div#texto-bienvenida > h1 {
   font-size: 2.5em;
 }
 
-div.botones-bienvenida {
-  display: flex;
-  gap: 3em;
-}
-
 a#comenzar {
   color: white;
   background: #425e0c;
   border-radius: 15px;
   border: 1px solid #7dab27;
+  text-decoration: none;
   padding: 0.4em;
-}
-
-a#registrate {
-  color: #385dab;
-  border-radius: 15px;
-  border: 1px solid #425e0c;
-  padding: 0.4em;
+  margin: 0 9em;
 }
 
 section#menu-fauna {
@@ -81,11 +71,18 @@ figure.imagen > img {
   height: 25em;
 }
 
+#comenzar:hover{
+  background-color: white;
+  color: #425e0c;
+}
+
 /* TABLET */
 
 @media screen and (min-width: 481px) and (max-width: 1023px){
   section#bienvenida {
+    display: block;
     text-align: center;
+    margin: 2em;
   }
   img#img-principal {
     width: 50%;
@@ -93,6 +90,9 @@ figure.imagen > img {
   div.botones-bienvenida {
     gap: unset;
     justify-content: space-around;
+  }
+  div#texto-bienvenida {
+    width: unset !important;
   }
   div#texto-bienvenida > h1 {
     margin-block-start: 0.2em;
@@ -127,12 +127,14 @@ figure.imagen > img {
   }
   div.catalogo {
     display: block;
+    margin: 0;
   }
   section#menu-fauna {
     margin: 0 2em;
   }
   figure.imagen {
     width: 18.75em;
+    margin: 0 0 1em 0;
   }
   figure.imagen > img {
     width: 18.75em;

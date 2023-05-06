@@ -1,5 +1,4 @@
 /*HEADER*/
-
 header {
   grid-area: h;
   padding: 0 5em;
@@ -12,7 +11,8 @@ header {
 
 #logo {
   /* width: 30vh; */
-  width: 10%;
+  width: 4em;
+  margin: 0.2em 0;
 }
 
 .nav-header {
@@ -21,41 +21,80 @@ header {
   width: 25em;
 }
 
+.nav-header2{
+  display: flex;
+}
+
 .navigation {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  padding: 0.1em 0.3em;
 }
 
-#register {
-  background-color: #425E0C;
-  border-radius: 15px;
+.nav-2 {
   padding: 0.4em;
+  font-weight: normal;
+  margin: 0 0.3em;
 }
 
 main {
   grid-area: m;
 }
 
-/* CELULAR */
+a:hover{
+  background-color: #425e0c;
+  border-radius: 10px;
+}
 
+.nav-2:hover{
+  background-color: white;
+  color: #425E0C;
+}
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 1023px){
+  #logo{
+    width: 3em;
+  }
+
+  .nav-2{
+    font-size: small;
+  }
+}
+
+/* CELULAR */
 @media screen and (max-width: 480px) {
   header {
     padding: 0 2em;
-    display: block;
     height: 6em;
   }
   .nav-header {
     width: 100%;
     margin: 0 0 0.7em 0;
   }
-  .navigation {
-    
+
+  .nav-header2{
+    flex-direction: column;
   }
+
+  .nav-2{
+    font-size: xx-small !important;
+  }
+
+  .navigation {
+    font-size: 0.8em;
+  }
+
   figure.imagen {
     width: unset !important;
   }
+
+  #logo{
+    width: 2em;
+  }
 }
+
 
 /* header{
   padding: 1em 0;

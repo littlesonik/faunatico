@@ -12,7 +12,8 @@ footer {
 
 #logo-footer {
   /* width: 25vh; */
-  width: 9%;
+  width: 4em;
+  margin: 0.2em 0;
 }
 
 #social-media{
@@ -32,12 +33,22 @@ footer {
   height: 3vh;
 }
 
-/* CELULAR */
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 1023px){
+  #logo-footer{
+    width: 3em;
+  }
+}
 
+/* CELULAR */
 @media screen and (max-width: 480px) {
   footer {
     padding: 0 2em;
     justify-content: unset;
+  }
+
+  #logo-footer{
+    width: 2em;
   }
 }
 
