@@ -10,8 +10,8 @@ fastify.get('/usuario/checktoken', require('./src/checktoken'));
 //API para CRUD de categorias
 fastify.route({
   method: ['GET', 'POST', 'PUT', 'DELETE'],
-  url: '/especie',
-  handler: require('./src/especie')
+  url: '/avistamiento',
+  handler: require('./src/avistamiento')
 });
 
 // Run the server!

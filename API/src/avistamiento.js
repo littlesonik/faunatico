@@ -20,7 +20,7 @@ module.exports = async (req, res) => {
 };
 
 function getColeccion(){
-  return admin.firestore().collection('especies');
+  return admin.firestore().collection('avistamientos');
 }
 
 async function procesarGET(req, res) {
@@ -38,17 +38,20 @@ async function procesarGET(req, res) {
 async function procesarPOST(req, res) {
   try {
     //EDITAR EL OBJETO MAS ADELANTEE
-      const {nombre, descripcion} = req.body;
-      const especie = {
+      const {nombre, cantidad, fecha, hora, ubicacion} = req.body;
+      const avistamiento = {
         nombre,
-        descripcion
+        cantidad,
+        fecha,
+        hora,
+        ubicacion
       }
       const documento = await getColeccion().doc(); //crea un documento vacio y autogenera un id
       const id = documento.id;
-      documento.set(especie);
+      documento.set(avistamiento);
       // paso para tener el id dentro del mismo objeto JSON
-      especie.id = id;
-      return especie;
+      avistamiento.id = id;
+      return avistamiento;
   } catch (error) {
       res.code(500).send({error: error.message});
   }
@@ -57,14 +60,17 @@ async function procesarPOST(req, res) {
 async function procesarPUT(req, res) {
   //Para editar una categoria
   try {
-      const {nombre, descripcion, id} = req.body;
-      const especie = {
+      const {nombre, cantidad, id, fecha, hora, ubicacion} = req.body;
+      const avistamiento = {
         nombre,
-        descripcion
+        cantidad,
+        fecha,
+        hora,
+        ubicacion
       }
       const documento = await getColeccion().doc(id);
-      documento.update(especie);
-      return especie;
+      documento.update(avistamiento);
+      return avistamiento;
   } catch (error) {
       res.code(500).send({error: error.message});
   }
