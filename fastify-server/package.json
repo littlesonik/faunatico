@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "fastify-server",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -18,5 +18,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
