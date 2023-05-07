@@ -4,9 +4,9 @@ import Layout from "@/components/layout";
 export default function PaginaAvistamiento(){
   return(
     <>
-      <Layout>
-        <AvistamientoManager />
-      </Layout>
+        <Layout>
+          <AvistamientoManager />
+        </Layout>
     </>
   );
 }

@@ -47,6 +47,20 @@ a#comenzar {
   margin: 0 9em;
 }
 
+.especies{
+  text-decoration: none;
+  color: inherit;
+}
+
+.especies:hover{
+  text-decoration: underline;
+}
+
+.imagen img:hover{
+  transform: scale(1.03);
+  transition: 1s ease;
+}
+
 section#menu-fauna {
   margin: 5em;
 }

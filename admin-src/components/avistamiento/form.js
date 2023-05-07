@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Configuracion from '../libreria/config'
 
 export default function AvistamientoForm({avistamientos, setAvistamientos}) {
   
@@ -17,7 +18,7 @@ export default function AvistamientoForm({avistamientos, setAvistamientos}) {
           nombre, cantidad, fecha, hora, ubicacion
         };
     
-        const baseUrl = 'http://localhost:3000';
+        const baseUrl = Configuracion.getBaseUrl();
         const url = baseUrl + '/avistamiento';
     
         const respuesta = await fetch(url, {
@@ -44,27 +45,34 @@ export default function AvistamientoForm({avistamientos, setAvistamientos}) {
 
   return (
     <>
-      <h1>Registra aquí tus avistamientos de la fauna chilen</h1>
+      <h1>Registra aquí tus avistamientos de la fauna chilena</h1>
       <form action="form" method="post" onSubmit={procesarFormulario}>
-        <label htmlFor= "nombre">Nombre de la especie:</label>
-        <input type="text" id="nombre" value={nombre} onChange={(e) => setNombre(e.target.value)}/>
+        <fieldset className="form-avistamiento">
+          <label htmlFor= "nombre" className="label-avistamiento">Nombre de la especie:</label>
+          <input type="text" id="nombre" value={nombre} className="input-avistamiento" onChange={(e) => setNombre(e.target.value)}/>
+        </fieldset>
 
-        <label htmlFor= "cantidad">Cantidad de animales:</label>
-        <input type="text" id="cantidad" value={cantidad} onChange={(e) => setCantidad(e.target.value)}/>
+        <fieldset className="form-avistamiento">
+          <label htmlFor= "cantidad" className="label-avistamiento">Cantidad de animales:</label>
+          <input type="text" id="cantidad" value={cantidad} className="input-avistamiento" onChange={(e) => setCantidad(e.target.value)}/>
+        </fieldset>
 
-        <label htmlFor= "fecha">Día del avistamiento:</label>
-        <input type="date" id="fecha" value={fecha} onChange={(e) => setFecha(e.target.value)}/>
+        <fieldset className="form-avistamiento">
+          <label htmlFor= "fecha" className="label-avistamiento">Día del avistamiento:</label>
+          <input type="date" id="fecha" value={fecha} className="input-avistamiento" onChange={(e) => setFecha(e.target.value)}/>
+        </fieldset>
 
-        <label htmlFor= "hora">Hora aproximada de avistamiento:</label>
-        <input type="time" id="hora" value={hora} onChange={(e) => setHora(e.target.value)}/>
+        <fieldset className="form-avistamiento">
+          <label htmlFor= "hora" className="label-avistamiento">Hora aproximada de avistamiento:</label>
+          <input type="time" id="hora" value={hora} className="input-avistamiento" onChange={(e) => setHora(e.target.value)}/>
+        </fieldset>
 
-        <label htmlFor= "ubicacion">Ubicación:</label>
-        <input type="text" id="ubicacion" value={ubicacion} onChange={(e) => setUbicacion(e.target.value)}/>
-
-        <button type="submit">Guardar</button>
+        <fieldset className="form-avistamiento">
+          <label htmlFor= "ubicacion" className="label-avistamiento">Ubicación:</label>
+          <input type="text" id="ubicacion" value={ubicacion} className="input-avistamiento" onChange={(e) => setUbicacion(e.target.value)}/>
+        </fieldset>
+        <button type="submit" className="btn-guardar">Guardar</button>
       </form>
-
-      Nombre: {nombre} | Cantidad: {cantidad} |Fecha: {fecha}| Hora: {hora} | ubicacion {ubicacion}
     </>
   );
 }

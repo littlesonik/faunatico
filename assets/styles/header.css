@@ -42,7 +42,7 @@ main {
   grid-area: m;
 }
 
-a:hover{
+header a:hover{
   background-color: #425e0c;
   border-radius: 10px;
 }

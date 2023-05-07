@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@100;300;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas: 
+  "h"
+  "m"
+  "f";
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  color: #ab2f16;
+}
+
+main{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+  border: 1px solid #ab2f16;
+  border-radius: 7px;
+  width: 40%;
+  align-self: center;
+  text-align: left;
+}
+
+.form-avistamiento{
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset{
+  border-style: none;
+}
+
+.input-avistamiento{
+  width: 40%;
+	border-radius: 4px;
+	border-style:none;
+	border: 1px solid #ab2f16;
+}
+
+.label-avistamiento{
+  margin: 0 0.5em 0 0;
+  font-weight: bold;
+}
+
+button{
+	border: 1px solid #ab2f16;
+	border-radius: 7px;
+	margin: 0.8em 0 0 0;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: bold;
+	background-color: white;
+	color: #ab2f16;
+}
+
+button:hover{
+	background-color: #ab2f16;
+	color: white;
+}
+
+.btn-guardar{
+  margin: 1em;
+}
+
+.eliminar{
+  margin: 0 0 0.2em 0;
+}
+
+table, th, td{
+  border: solid 1px #ab2f16;
+  border-radius: 2px;
+}
+
+table{
+  margin: 0 0 2em 0;
+}
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 1023px){
+  form{
+    width: 50%;
+  }
+}
+
+/* CELULAR */
+@media screen and (max-width: 480px){
+  form{
+    width: 70%;
+  }
+}

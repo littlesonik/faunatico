@@ -7,15 +7,17 @@ export default function AvistamientoManager(props){
 
   return(
     <>
-      <AvistamientoForm 
-        avistamientos={avistamientos}
-        setAvistamientos={setAvistamientos}
-      />
-      <hr/>
-      <AvistamientoListado 
-        avistamientos={avistamientos}
-        setAvistamientos={setAvistamientos}
-      />
+      <main>
+        <AvistamientoForm 
+          avistamientos={avistamientos}
+          setAvistamientos={setAvistamientos}
+        />
+        <hr/>
+        <AvistamientoListado 
+          avistamientos={avistamientos}
+          setAvistamientos={setAvistamientos}
+        />
+      </main>
     </>
   )
 }

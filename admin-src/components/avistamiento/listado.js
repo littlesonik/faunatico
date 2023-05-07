@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
+import Configuracion from "../libreria/config";
 
 export default function AvistamientoListado({avistamientos, setAvistamientos}) {
   const cargarDatos = async () => {
     try {
-      const baseUrl = 'http://localhost:3000';
+      const baseUrl = Configuracion.getBaseUrl();
       const url = baseUrl + '/avistamiento';
       const respuesta = await fetch(url);
 
@@ -21,7 +22,7 @@ export default function AvistamientoListado({avistamientos, setAvistamientos}) {
   
   const eliminar = async (avistamiento) => {
     try {
-        const baseUrl = 'http://localhost:3000';
+        const baseUrl = Configuracion.getBaseUrl();
         const url = baseUrl + '/avistamiento?id='+ avistamiento.id;
         const respuesta = await fetch(url, {
           method: 'DELETE'
@@ -41,7 +42,7 @@ export default function AvistamientoListado({avistamientos, setAvistamientos}) {
     <>
       <h2>Listado de Avistamientos</h2>
 
-      <table border={1}>
+      <table id="tabla-avistamientos">
         <thead>
           <tr>
             <th>Nombre</th>
@@ -49,7 +50,7 @@ export default function AvistamientoListado({avistamientos, setAvistamientos}) {
             <th>Fecha</th>
             <th>Hora</th>
             <th>Ubicacion</th>
-            <th>Acciones</th>
+            <th></th>
 
           </tr>
         </thead>
@@ -63,8 +64,7 @@ export default function AvistamientoListado({avistamientos, setAvistamientos}) {
               <td>{avistamiento.ubicacion}</td>
 
               <td>
-                <button>Editar</button>
-                <button onClick={() => eliminar(avistamiento)}>Eliminar</button>
+                <button className="eliminar" onClick={() => eliminar(avistamiento)}>Eliminar</button>
               </td>
             </tr>
           ))}

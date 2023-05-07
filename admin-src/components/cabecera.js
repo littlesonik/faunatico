@@ -1,10 +1,8 @@
-import Image from 'next/image';
-
 export default function Cabecera(props) {
   return (
     <>
       <header>
-        <Image src="/assets/images/faunatico-logo.png" alt="Logo Faunatico" id="logo" width={20} height={20}/>
+        <img src="https://izapata.imgix.net/faunatico/assets/images/faunatico-logo.png" alt="Logo Faunatico" id="logo"/>
         
         <nav className="nav-header">
           <a href="./index.html" className="navigation">Inicio</a>
