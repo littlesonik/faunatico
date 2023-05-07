@@ -1,0 +1,175 @@
+@import url(./header.css);
+@import url(./footer.css);
+
+/* COMPUTADOR */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas: 
+  "h"
+  "m"
+  "f";
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  color: #ab2f16;
+}
+
+section#bienvenida {
+  display: flex;
+  margin: 5em;
+  text-align: left;
+  justify-content: space-between;
+}
+img#img-principal {
+  width: 45%;
+  border-radius: 10px
+}
+
+div#texto-bienvenida {
+  width: 40%;
+}
+
+div#texto-bienvenida > h1 {
+  font-size: 2.5em;
+}
+
+a#comenzar {
+  color: white;
+  background: #425e0c;
+  border-radius: 15px;
+  border: 1px solid #7dab27;
+  text-decoration: none;
+  padding: 0.4em;
+  margin: 0 9em;
+}
+
+.especies{
+  text-decoration: none;
+  color: inherit;
+}
+
+.especies:hover{
+  text-decoration: underline;
+}
+
+.imagen img:hover{
+  transform: scale(1.03);
+  transition: 1s ease;
+}
+
+section#menu-fauna {
+  margin: 5em;
+}
+
+div.catalogo {
+  display: flex;
+  margin: 2em 0;
+  justify-content: space-between;
+}
+
+figure.imagen {
+  width: 21.875em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+figure.imagen > img {
+  width: 21.875em;
+  border-radius: 10px;
+  height: 25em;
+}
+
+#comenzar:hover{
+  background-color: white;
+  color: #425e0c;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 481px) and (max-width: 1023px){
+  section#bienvenida {
+    display: block;
+    text-align: center;
+    margin: 2em;
+  }
+  img#img-principal {
+    width: 50%;
+  }
+  div.botones-bienvenida {
+    gap: unset;
+    justify-content: space-around;
+  }
+  div#texto-bienvenida {
+    width: unset !important;
+  }
+  div#texto-bienvenida > h1 {
+    margin-block-start: 0.2em;
+    margin-block-end: 0.4em;
+  }
+  figure.imagen {
+    width: 11.875em;
+  }
+  figure.imagen > img {
+    width: 11.875em;
+    height: 15em;
+  }
+}
+
+/* CELULAR */
+
+@media screen and (max-width: 480px) {
+  section#bienvenida {
+    display: block;
+    text-align: center;
+    margin: 2em;
+  }
+  img#img-principal {
+    width: 100%;
+  }
+  div#texto-bienvenida {
+    width: unset !important;
+  }
+  div.botones-bienvenida {
+    gap: unset;
+    justify-content: space-around;
+  }
+  div.catalogo {
+    display: block;
+    margin: 0;
+  }
+  section#menu-fauna {
+    margin: 0 2em;
+  }
+  figure.imagen {
+    width: 18.75em;
+    margin: 0 0 1em 0;
+  }
+  figure.imagen > img {
+    width: 18.75em;
+    height: 21.875em;
+  }
+}
+
+/* body{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6,1fr);
+  grid-template-areas: 
+  "h h h h h h"
+  "m m m m m m"
+  "m m m m m m"
+  "m m m m m m"
+  "m m m m m m"
+  "f f f f f f";
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+} */

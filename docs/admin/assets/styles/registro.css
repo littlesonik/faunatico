@@ -1,0 +1,166 @@
+@import url(./header.css);
+@import url(./footer.css);
+
+body{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-areas: 
+  "h"
+  "m"
+  "f";
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  color: #ab2f16;
+}
+
+main{
+	background-image: url(https://izapata.imgix.net/faunatico/assets/images/chungungo.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:scroll;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+}
+
+form{
+	padding: 1em;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 5px;
+	width: 20%;
+	margin: 0 10em 1em 0;
+	align-self: flex-end;
+}
+
+fieldset{
+	border-style: none;
+}
+
+input{
+	width: 95%;
+	border-radius: 4px;
+	border-style:none;
+	border: 1px solid #ab2f16;
+	margin: 0.2em 0;
+	padding: 0.2em 0.3em;
+	font-size:x-small;
+}
+
+h4{
+	margin: 0.1em 0;
+	text-align: left;
+}
+
+.checkbox{
+	font-size: smaller;
+	text-align: left;
+}
+
+#checkbox_terminos{
+	display: flex;
+	justify-content: center;
+}
+
+#terminos{
+	width: 10%;
+	align-self: flex-start;
+}
+
+.formulario_btn{
+	border: 1px solid #ab2f16;
+	border-radius: 7px;
+	margin: 0.8em 0 0 0;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: bold;
+	background-color: white;
+	color: #ab2f16;
+}
+
+.formulario_btn:hover{
+	background-color: #ab2f16;
+	color: white;
+}
+
+/* TABLET */
+@media screen and (min-width: 481px) and (max-width: 1023px){
+	form{
+		align-self:center;
+		margin: 0 0 1em 0;
+		width: 40%;
+		text-align: center;
+	}
+
+	input{
+		width: 60%;
+	}
+
+	h4{
+		text-align: center;
+	}
+	
+}
+
+/* CELULAR */
+@media screen and (max-width: 480px){
+	h1{
+		font-size: 1em;
+	}
+	
+	form{
+		align-self:center;
+		margin: 0 0 1em 0;
+		width: 60%;
+		text-align: center;
+	}
+
+	h4{
+		font-size: small;
+	}
+}
+
+/*SECCION VALIDACION CON JS*/
+.formulario_mensaje {
+	height: 4em;
+	background: #F66060;
+	padding: 0.8em 0 0 0;
+	border-radius: 5px;
+	display: none;
+	font-size: x-small;
+}
+
+.formulario_mensaje-activo {
+	display: block;
+}
+
+.formulario_mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario_mensaje-exito-activo {
+	display: block;
+}
+
+.formulario_input-error {
+	font-size: xx-small;
+	margin:0 0 1em;
+	display: none;
+}
+
+.formulario_input-error-activo {
+	display: block;
+}
+
+/* ----- Estilo de Validaciones ----- */
+.formulario_grupo-incorrecto .formulario_label {
+  color: #bb2929;
+}
+
+.formulario_grupo-incorrecto .formulario_input {
+  border: 3px solid #bb2929;
+	border-radius: 5px;
+}
