@@ -27,7 +27,8 @@ Ademas el usuario será capaz de registrar sus avistamientos en un formulario lu
 ---
 
 ### Zona Privada
-https://stgoneira.github.io/desarrollo-frontend-banco/admin  
+- https://littlesonik.github.io/faunatico/admin/avistamiento
+Tengo problemas con el CSS y con la conexion a firebase, por el momento no está funcional
 
 ---
 ## Fastify Server - API Reference
