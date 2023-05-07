@@ -1,14 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true
-  /*
+  reactStrictMode: true,
   output: 'export',
-  basePath: '/desarrollo-frontend-banco',
+  basePath: '/admin',
   trailingSlash: true,
   images: {
     unoptimized: true
   }
-  */
 }
 
 module.exports = nextConfig

@@ -1,6 +1,6 @@
 const Configuracion = {
   getBaseUrl:() => 
-  'http://localhost:3000'
+  'https://aerial-useful-coin.glitch.me/'
 };
 
 export default Configuracion
