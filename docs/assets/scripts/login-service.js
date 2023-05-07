@@ -6,10 +6,10 @@ formulario.addEventListener("submit", async (submitEvent) => {
   const formData = new FormData(formElement);
 
   const email = formData.get("email");
-  const contrasena = formData.get("password");
+  const password = formData.get("password");
   const nuevoUsuario = {
     email,
-    contrasena,
+    password,
   };
 
   const baseUrl = getBaseUrl();
