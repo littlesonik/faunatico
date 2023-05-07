@@ -1,16 +1,7 @@
 # Faunatico
 
 Enciclopedia de fauna chilena, que indique informacion sobre su descripcion fisica, ubicacion en Chile, habitat (bosque, ciudad, mar, humedal, etc.), estados de conservacion, etc.
-
----
-### Datos a buscar de las especies:
-* Nombre cientifico.
-* Clasificacion: mamifero, anfibio, reptil, ave o pez.
-* Rasgos fisicos (color, altura, peso, descripcion general ,etc).
-* Tiempo de gestacion.
-* Habitat (bosque, humedal, costa, etc.).
-* Ubicacion geografica (regiones de Chile).
-* Estado de conservación.
+Ademas el usuario será capaz de registrar sus avistamientos en un formulario luego de registrarse en la zona privada
 
 ---
 ### Paleta de colores
@@ -25,6 +16,26 @@ Enciclopedia de fauna chilena, que indique informacion sobre su descripcion fisi
 | Blanco | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
 
 ---
+
+### Zona Pública
+- https://littlesonik.github.io/faunatico/  
+- https://littlesonik.github.io/faunatico/login.html
+
+**usuario:** ejemplo@gmail.com  
+**contraseña:** Ejemplo1
+
+---
+
+### Zona Privada
+https://stgoneira.github.io/desarrollo-frontend-banco/admin  
+
+---
+## Fastify Server - API Reference
+
+Desplegado en Glitch: https://aerial-useful-coin.glitch.me 
+
+---
+
 ### Diseño Landing Page
 
 [Figma](https://www.figma.com/file/4FyAyMbfsfIgg9fSAV5Y8P/Faunatico?node-id=0-1&t=7EyZJsACcH9gYV03-0)
