@@ -1,6 +1,7 @@
 # Faunatico
 
 Enciclopedia de fauna chilena, que indique informacion sobre su descripcion fisica, ubicacion en Chile, habitat (bosque, ciudad, mar, humedal, etc.), estados de conservacion, etc.
+
 Ademas el usuario será capaz de registrar sus avistamientos en un formulario luego de registrarse en la zona privada
 
 ---
@@ -28,7 +29,10 @@ Ademas el usuario será capaz de registrar sus avistamientos en un formulario lu
 
 ### Zona Privada
 - https://littlesonik.github.io/faunatico/admin/avistamiento
-Tengo problemas con el CSS y con la conexion a firebase, por el momento no está funcional
+
+La zona privada permite ingresar a la zona de React, donde se puede rellenar un formulario para registrar los avistamientos de especies
+
+**Tengo problemas con el CSS y con la conexion a firebase, por el momento no está funcional**
 
 ---
 ## Fastify Server - API Reference
