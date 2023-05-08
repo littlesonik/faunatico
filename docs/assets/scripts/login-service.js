@@ -40,7 +40,7 @@ formulario.addEventListener("submit", async (submitEvent) => {
     //guardo datos del usuario y TOKEN
     localStorage.setItem("usuario", JSON.stringify(usuario));
     //redirijo a pagina protegida
-    window.location = "inicio.html";
+    window.location = "/admin/avistamiento";
   } catch (error) {
     //gestion errores
     console.error(error.code);

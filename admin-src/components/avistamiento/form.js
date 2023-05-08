@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Configuracion from '../libreria/config'
+import Configuracion from "../libreria/config";
 
 export default function AvistamientoForm({avistamientos, setAvistamientos}) {
   

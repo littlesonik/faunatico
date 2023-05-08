@@ -1,6 +1,5 @@
 const Configuracion = {
-  getBaseUrl:() => 
-    return 'https://aerial-useful-coin.glitch.me'
+  getBaseUrl:() => 'https://aerial-useful-coin.glitch.me'
 };
 
-export default Configuracion
+export default Configuracion;

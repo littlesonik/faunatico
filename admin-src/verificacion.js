@@ -1,5 +1,5 @@
 //recuperar el token
-const storageUsuario = localStorage.getItem("usuario"); //viene como string
+export const storageUsuario = localStorage.getItem("usuario"); //viene como string
 if( storageUsuario == null){
   //si no esta autenticado, lo envio a la pagina de login
   window.location = "login.html"
